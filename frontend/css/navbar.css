@@ -1,0 +1,1043 @@
+/* =========================================
+   WEATHER NAVBAR
+========================================= */
+
+.weather-navbar {
+
+   background: #0b2a5b !important;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+
+    transition: var(--transition);
+}
+
+
+/* =========================================
+   BRAND
+========================================= */
+
+.weather-brand {
+
+    display: flex;
+    align-items: center;
+
+    gap: 11px;
+
+    font-size: 1.25rem;
+    font-weight: 800;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    transition: var(--transition);
+}
+
+
+.weather-brand:hover {
+
+    color: #ffffff;
+}
+
+
+/* =========================================
+   BRAND MARK - W LOGO
+========================================= */
+
+.brand-mark {
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 11px;
+
+    background: #ffffff;
+
+    color: #0f5fe7;
+
+    font-size: 1.05rem;
+    font-weight: 800;
+
+    box-shadow:
+        0 5px 16px rgba(0, 0, 0, 0.14);
+
+    transition: var(--transition);
+}
+
+
+.weather-brand:hover .brand-mark {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 22px rgba(0, 0, 0, 0.18);
+}
+
+
+/* =========================================
+   NAVIGATION LINKS
+========================================= */
+
+.weather-navbar .nav-link {
+
+    position: relative;
+
+    color: rgba(255, 255, 255, 0.88);
+
+    font-size: 0.92rem;
+
+    font-weight: 500;
+
+    padding: 10px 16px !important;
+
+    transition: var(--transition);
+}
+
+
+.weather-navbar .nav-link:hover {
+
+    color: #ffffff;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   ACTIVE LINK
+========================================= */
+
+.weather-navbar .nav-link.active {
+
+    color: #ffffff;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   ACTIVE UNDERLINE
+========================================= */
+
+.weather-navbar .nav-link.active::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 16px;
+    right: 16px;
+
+    bottom: 2px;
+
+    height: 2px;
+
+    border-radius: 10px;
+
+    background: #ffffff;
+}
+
+
+/* =========================================
+   MOBILE TOGGLE
+========================================= */
+
+.weather-navbar .navbar-toggler {
+
+    border: 1px solid rgba(255, 255, 255, 0.45);
+
+    border-radius: 10px;
+
+    padding: 8px 10px;
+
+    box-shadow: none;
+}
+
+
+.weather-navbar .navbar-toggler:focus {
+
+    box-shadow:
+        0 0 0 3px rgba(255, 255, 255, 0.18);
+}
+
+
+/* =========================================
+   MOBILE HAMBURGER ICON
+========================================= */
+
+.weather-navbar .navbar-toggler-icon {
+
+    filter: brightness(0) invert(1);
+}
+
+
+/* =========================================
+   SIMPLE PAGE
+========================================= */
+
+.simple-page {
+
+    min-height: calc(100vh - 73px);
+
+    padding: 90px 0;
+
+    background:
+
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(37, 99, 235, 0.07),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 90% 80%,
+            rgba(6, 182, 212, 0.07),
+            transparent 30%
+        );
+}
+
+
+/* =========================================
+   PAGE CONTENT
+========================================= */
+
+.simple-page-content {
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   PAGE LABEL
+========================================= */
+
+.simple-page-label {
+
+    display: inline-block;
+
+    margin-bottom: 18px;
+
+    color: var(--primary);
+
+    font-size: 0.78rem;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* =========================================
+   PAGE TITLE
+========================================= */
+
+.simple-page-title {
+
+    margin-bottom: 18px;
+
+    color: var(--navy);
+
+    font-size: clamp(2.2rem, 5vw, 3.7rem);
+
+    font-weight: 800;
+
+    line-height: 1.15;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.simple-page-description {
+
+    max-width: 700px;
+
+    margin: 0 auto 45px;
+
+    color: var(--text-secondary);
+
+    font-size: 1.05rem;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   SIMPLE PAGE CARD
+========================================= */
+
+.simple-page-card {
+
+    max-width: 720px;
+
+    margin: 0 auto;
+
+    padding: 45px 35px;
+
+    background:
+        rgba(255, 255, 255, 0.85);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-xl);
+
+    box-shadow: var(--shadow-lg);
+
+    backdrop-filter: blur(15px);
+
+    transition: var(--transition);
+}
+
+
+.simple-page-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 25px 60px rgba(15, 23, 42, 0.12);
+}
+
+
+/* =========================================
+   CARD LABEL
+========================================= */
+
+.simple-page-card-label {
+
+    display: inline-block;
+
+    margin-bottom: 12px;
+
+    color: var(--cyan);
+
+    font-size: 0.75rem;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* =========================================
+   CARD HEADING
+========================================= */
+
+.simple-page-card h2 {
+
+    margin-bottom: 12px;
+
+    color: var(--navy);
+
+    font-size: 1.5rem;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   CARD TEXT
+========================================= */
+
+.simple-page-card p {
+
+    margin: 0;
+
+    color: var(--text-secondary);
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   RESPONSIVE NAVBAR
+========================================= */
+
+@media (max-width: 991px) {
+
+    .weather-navbar .navbar-collapse {
+
+        margin-top: 12px;
+
+        padding: 10px 0 15px;
+
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+
+    .weather-navbar .nav-link {
+
+        padding: 12px 8px !important;
+    }
+
+
+    .weather-navbar .nav-link.active::after {
+
+        left: 8px;
+        right: auto;
+
+        width: 35px;
+
+        bottom: 4px;
+    }
+
+}
+
+
+/* =========================================
+   RESPONSIVE SIMPLE PAGE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .simple-page {
+
+        padding: 65px 20px;
+    }
+
+
+    .simple-page-title {
+
+        font-size: 2.3rem;
+    }
+
+
+    .simple-page-description {
+
+        font-size: 0.98rem;
+
+        margin-bottom: 35px;
+    }
+
+
+    .simple-page-card {
+
+        padding: 35px 25px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .weather-brand {
+
+        font-size: 1.1rem;
+
+        gap: 8px;
+    }
+
+
+    .brand-mark {
+
+        width: 36px;
+        height: 36px;
+
+        border-radius: 10px;
+
+        font-size: 0.95rem;
+    }
+
+
+    .simple-page {
+
+        padding: 50px 16px;
+    }
+
+
+    .simple-page-title {
+
+        font-size: 2rem;
+    }
+
+
+    .simple-page-description {
+
+        font-size: 0.94rem;
+
+        line-height: 1.7;
+    }
+
+
+    .simple-page-card {
+
+        padding: 30px 20px;
+    }
+/* =========================================
+   WEATHERGPT NAVBAR
+========================================= */
+
+.weather-navbar {
+
+    background: #0f5fe7 !important;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+
+    transition: var(--transition);
+
+}
+
+
+/* =========================================
+   NAVBAR CONTAINER
+========================================= */
+
+.weather-navbar .container {
+
+    min-height: 72px;
+
+}
+
+
+/* =========================================
+   BRAND
+========================================= */
+
+.weather-brand {
+
+    display: flex;
+    align-items: center;
+
+    gap: 11px;
+
+    font-size: 1.25rem;
+    font-weight: 800;
+
+    color: #ffffff !important;
+
+    text-decoration: none;
+
+    transition: var(--transition);
+
+}
+
+
+.weather-brand:hover {
+
+    color: #ffffff !important;
+
+}
+
+
+/* =========================================
+   BRAND MARK - W LOGO
+========================================= */
+
+.brand-mark {
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 11px;
+
+    background: #ffffff !important;
+
+    color: #0f5fe7 !important;
+
+    font-size: 1.05rem;
+    font-weight: 800;
+
+    line-height: 1;
+
+    box-shadow:
+        0 5px 16px rgba(0, 0, 0, 0.15);
+
+    transition: var(--transition);
+
+}
+
+
+.weather-brand:hover .brand-mark {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 22px rgba(0, 0, 0, 0.20);
+
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.weather-navbar .navbar-nav {
+
+    gap: 3px;
+
+}
+
+
+/* =========================================
+   NAVIGATION LINKS
+========================================= */
+
+.weather-navbar .nav-link {
+
+    position: relative;
+
+    color: rgba(255, 255, 255, 0.90) !important;
+
+    font-size: 0.92rem;
+
+    font-weight: 500;
+
+    padding: 10px 16px !important;
+
+    text-decoration: none;
+
+    transition: var(--transition);
+
+}
+
+
+.weather-navbar .nav-link:hover {
+
+    color: #ffffff !important;
+
+    transform: translateY(-1px);
+
+}
+
+
+/* =========================================
+   ACTIVE LINK
+========================================= */
+
+.weather-navbar .nav-link.active {
+
+    color: #ffffff !important;
+
+    font-weight: 700;
+
+}
+
+
+/* =========================================
+   ACTIVE UNDERLINE
+========================================= */
+
+.weather-navbar .nav-link.active::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 16px;
+    right: 16px;
+
+    bottom: 2px;
+
+    height: 2px;
+
+    border-radius: 10px;
+
+    background: #ffffff;
+
+}
+
+
+/* =========================================
+   MOBILE TOGGLE
+========================================= */
+
+.weather-navbar .navbar-toggler {
+
+    border: 1px solid rgba(255, 255, 255, 0.50) !important;
+
+    border-radius: 10px;
+
+    padding: 8px 10px;
+
+    box-shadow: none !important;
+
+}
+
+
+.weather-navbar .navbar-toggler:focus {
+
+    box-shadow:
+        0 0 0 3px rgba(255, 255, 255, 0.18) !important;
+
+}
+
+
+/* =========================================
+   HAMBURGER ICON
+========================================= */
+
+.weather-navbar .navbar-toggler-icon {
+
+    filter: brightness(0) invert(1);
+
+}
+
+
+/* =========================================
+   SIMPLE PAGE
+========================================= */
+
+.simple-page {
+
+    min-height: calc(100vh - 73px);
+
+    padding: 90px 0;
+
+    background:
+
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(37, 99, 235, 0.07),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 90% 80%,
+            rgba(6, 182, 212, 0.07),
+            transparent 30%
+        );
+
+}
+
+
+/* =========================================
+   PAGE CONTENT
+========================================= */
+
+.simple-page-content {
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+}
+
+
+/* =========================================
+   PAGE LABEL
+========================================= */
+
+.simple-page-label {
+
+    display: inline-block;
+
+    margin-bottom: 18px;
+
+    color: var(--primary);
+
+    font-size: 0.78rem;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+}
+
+
+/* =========================================
+   PAGE TITLE
+========================================= */
+
+.simple-page-title {
+
+    margin-bottom: 18px;
+
+    color: var(--navy);
+
+    font-size: clamp(2.2rem, 5vw, 3.7rem);
+
+    font-weight: 800;
+
+    line-height: 1.15;
+
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.simple-page-description {
+
+    max-width: 700px;
+
+    margin: 0 auto 45px;
+
+    color: var(--text-secondary);
+
+    font-size: 1.05rem;
+
+    line-height: 1.8;
+
+}
+
+
+/* =========================================
+   SIMPLE PAGE CARD
+========================================= */
+
+.simple-page-card {
+
+    max-width: 720px;
+
+    margin: 0 auto;
+
+    padding: 45px 35px;
+
+    background:
+        rgba(255, 255, 255, 0.85);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-xl);
+
+    box-shadow: var(--shadow-lg);
+
+    backdrop-filter: blur(15px);
+
+    transition: var(--transition);
+
+}
+
+
+.simple-page-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 25px 60px rgba(15, 23, 42, 0.12);
+
+}
+
+
+/* =========================================
+   CARD LABEL
+========================================= */
+
+.simple-page-card-label {
+
+    display: inline-block;
+
+    margin-bottom: 12px;
+
+    color: var(--cyan);
+
+    font-size: 0.75rem;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+}
+
+
+/* =========================================
+   CARD HEADING
+========================================= */
+
+.simple-page-card h2 {
+
+    margin-bottom: 12px;
+
+    color: var(--navy);
+
+    font-size: 1.5rem;
+
+    font-weight: 700;
+
+}
+
+
+/* =========================================
+   CARD TEXT
+========================================= */
+
+.simple-page-card p {
+
+    margin: 0;
+
+    color: var(--text-secondary);
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================================
+   RESPONSIVE NAVBAR
+========================================= */
+
+@media (max-width: 991px) {
+
+    .weather-navbar .navbar-collapse {
+
+        margin-top: 12px;
+
+        padding: 12px 0 16px;
+
+        border-top: 1px solid rgba(255, 255, 255, 0.18);
+
+    }
+
+
+    .weather-navbar .navbar-nav {
+
+        gap: 0;
+
+    }
+
+
+    .weather-navbar .nav-link {
+
+        padding: 12px 8px !important;
+
+    }
+
+
+    .weather-navbar .nav-link.active::after {
+
+        left: 8px;
+
+        right: auto;
+
+        width: 35px;
+
+        bottom: 4px;
+
+    }
+
+}
+
+
+/* =========================================
+   RESPONSIVE SIMPLE PAGE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .simple-page {
+
+        padding: 65px 20px;
+
+    }
+
+
+    .simple-page-title {
+
+        font-size: 2.3rem;
+
+    }
+
+
+    .simple-page-description {
+
+        font-size: 0.98rem;
+
+        margin-bottom: 35px;
+
+    }
+
+
+    .simple-page-card {
+
+        padding: 35px 25px;
+
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .weather-navbar .container {
+
+        min-height: 64px;
+
+    }
+
+
+    .weather-brand {
+
+        font-size: 1.1rem;
+
+        gap: 8px;
+
+    }
+
+
+    .brand-mark {
+
+        width: 36px;
+        height: 36px;
+
+        border-radius: 10px;
+
+        font-size: 0.95rem;
+
+    }
+
+
+    .simple-page {
+
+        padding: 50px 16px;
+
+    }
+
+
+    .simple-page-title {
+
+        font-size: 2rem;
+
+    }
+
+
+    .simple-page-description {
+
+        font-size: 0.94rem;
+
+        line-height: 1.7;
+
+    }
+
+
+    .simple-page-card {
+
+        padding: 30px 20px;
+
+    }
+
+}
+}

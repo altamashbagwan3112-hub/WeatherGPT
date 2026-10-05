@@ -1,0 +1,832 @@
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.hero-section {
+
+    min-height:
+        calc(100vh - 73px);
+
+    display: flex;
+
+    align-items: center;
+
+    padding:
+        80px 0;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+
+        radial-gradient(
+            circle at 8% 20%,
+            rgba(56, 189, 248, 0.13),
+            transparent 32%
+        ),
+
+        radial-gradient(
+            circle at 92% 75%,
+            rgba(37, 99, 235, 0.11),
+            transparent 34%
+        ),
+
+        var(--background);
+}
+
+
+/* =========================================
+   HERO CONTENT
+========================================= */
+
+.hero-content {
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* =========================================
+   HERO LABEL
+========================================= */
+
+.hero-label {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    padding:
+        7px 13px;
+
+    margin-bottom: 20px;
+
+    border:
+        1px solid
+        rgba(37, 99, 235, 0.15);
+
+    border-radius: 50px;
+
+    background:
+        rgba(37, 99, 235, 0.06);
+
+    color:
+        var(--primary);
+
+    font-size:
+        0.72rem;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        1.5px;
+}
+
+
+/* =========================================
+   HERO TITLE
+========================================= */
+
+.hero-title {
+
+    max-width:
+        720px;
+
+    margin-bottom:
+        25px;
+
+    color:
+        var(--navy);
+
+    font-size:
+        clamp(2.8rem, 6vw, 5rem);
+
+    font-weight:
+        800;
+
+    line-height:
+        1.05;
+
+    letter-spacing:
+        -2.5px;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.hero-description {
+
+    max-width:
+        620px;
+
+    margin-bottom:
+        32px;
+
+    color:
+        var(--text-secondary);
+
+    font-size:
+        1.08rem;
+
+    line-height:
+        1.8;
+}
+
+
+/* =========================================
+   SEARCH BOX
+========================================= */
+
+.hero-search {
+
+    max-width:
+        650px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    padding:
+        7px;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:
+        16px;
+
+    box-shadow:
+        var(--shadow-md);
+
+    transition:
+        var(--transition);
+}
+
+
+.hero-search:focus-within {
+
+    border-color:
+        rgba(37, 99, 235, 0.35);
+
+    box-shadow:
+        0 12px 35px
+        rgba(37, 99, 235, 0.12);
+}
+
+
+/* =========================================
+   INPUT
+========================================= */
+
+.hero-search input {
+
+    flex:
+        1;
+
+    min-width:
+        0;
+
+    border:
+        none;
+
+    outline:
+        none;
+
+    padding:
+        14px 16px;
+
+    background:
+        transparent;
+
+    color:
+        var(--text-primary);
+
+    font-size:
+        0.94rem;
+}
+
+
+.hero-search input::placeholder {
+    color:
+        var(--text-muted);
+}
+
+
+/* =========================================
+   SEARCH BUTTON
+========================================= */
+
+.hero-search button {
+
+    flex-shrink:
+        0;
+
+    border:
+        none;
+
+    padding:
+        13px 22px;
+
+    border-radius:
+        11px;
+
+    color:
+        white;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--primary),
+            var(--cyan)
+        );
+
+    font-size:
+        0.88rem;
+
+    font-weight:
+        600;
+
+    cursor:
+        pointer;
+
+    transition:
+        var(--transition);
+}
+
+
+.hero-search button:hover {
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 9px 22px
+        rgba(37, 99, 235, 0.25);
+}
+
+
+.hero-search button:active {
+
+    transform:
+        translateY(0);
+}
+
+
+/* =========================================
+   QUICK QUESTIONS
+========================================= */
+/* =========================================
+   QUICK QUESTIONS
+========================================= */
+
+.quick-questions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    margin-top: 20px;
+    padding: 14px 16px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(239, 246, 255, 0.95),
+            rgba(236, 254, 255, 0.95)
+        );
+
+    border: 1px solid rgba(37, 99, 235, 0.12);
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 8px 25px rgba(37, 99, 235, 0.06);
+
+    transition: var(--transition);
+}
+
+
+.quick-questions:hover {
+    border-color: rgba(37, 99, 235, 0.20);
+
+    box-shadow:
+        0 12px 30px rgba(37, 99, 235, 0.09);
+}
+
+
+/* Try asking text */
+
+.quick-questions > span {
+    color: var(--navy);
+
+    font-size: 0.82rem;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    margin-right: 2px;
+}
+
+
+/* Question chips */
+
+.quick-question {
+    border: 1px solid rgba(37, 99, 235, 0.13);
+
+    background: rgba(255, 255, 255, 0.78);
+
+    color: var(--text-secondary);
+
+    padding: 7px 13px;
+
+    border-radius: 999px;
+
+    font-size: 0.78rem;
+
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: var(--transition);
+}
+
+
+/* Hover */
+
+.quick-question:hover {
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--primary),
+            var(--cyan)
+        );
+
+    border-color: transparent;
+
+    color: #ffffff;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 16px rgba(37, 99, 235, 0.18);
+}
+
+
+/* Click */
+
+.quick-question:active {
+
+    transform: translateY(0);
+
+}
+
+
+/* =========================================
+   QUERY STATUS
+========================================= */
+
+.query-status {
+
+    opacity:
+        0;
+
+    height:
+        0;
+
+    margin-top:
+        0;
+
+    color:
+        var(--primary);
+
+    font-size:
+        0.82rem;
+
+    transition:
+        var(--transition);
+}
+
+
+.query-status.show {
+
+    opacity:
+        1;
+
+    height:
+        auto;
+
+    margin-top:
+        14px;
+}
+
+
+.query-status.error {
+    color:
+        var(--danger);
+}
+
+
+/* =========================================
+   WEATHER PREVIEW
+========================================= */
+
+.weather-preview {
+
+    min-height:
+        430px;
+
+    position:
+        relative;
+
+    overflow:
+        hidden;
+
+    display:
+        flex;
+
+    align-items:
+        flex-end;
+
+    padding:
+        38px;
+
+    border-radius:
+        var(--radius-xl);
+
+    background:
+
+        linear-gradient(
+            145deg,
+            #0f172a 0%,
+            #172554 55%,
+            #1e3a8a 100%
+        );
+
+    box-shadow:
+        var(--shadow-lg);
+
+    isolation:
+        isolate;
+}
+
+
+/* =========================================
+   WEATHER CARD GLOW
+========================================= */
+
+.preview-glow {
+
+    position:
+        absolute;
+
+    width:
+        280px;
+
+    height:
+        280px;
+
+    top:
+        -100px;
+
+    right:
+        -70px;
+
+    border-radius:
+        50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(56, 189, 248, 0.75),
+            transparent 65%
+        );
+
+    filter:
+        blur(8px);
+
+    z-index:
+        -1;
+}
+
+
+.preview-glow-secondary {
+
+    position:
+        absolute;
+
+    width:
+        200px;
+
+    height:
+        200px;
+
+    bottom:
+        -100px;
+
+    left:
+        -80px;
+
+    border-radius:
+        50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(37, 99, 235, 0.65),
+            transparent 65%
+        );
+
+    filter:
+        blur(15px);
+
+    z-index:
+        -1;
+}
+
+
+/* =========================================
+   PREVIEW CONTENT
+========================================= */
+
+.preview-content {
+
+    width:
+        100%;
+
+    position:
+        relative;
+
+    z-index:
+        2;
+
+    color:
+        white;
+}
+
+
+/* =========================================
+   PREVIEW TOP
+========================================= */
+
+.preview-top {
+
+    display:
+        flex;
+
+    justify-content:
+        space-between;
+
+    align-items:
+        center;
+
+    margin-bottom:
+        28px;
+}
+
+
+.preview-label {
+
+    color:
+        rgba(255, 255, 255, 0.58);
+
+    font-size:
+        0.72rem;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        1.3px;
+}
+
+
+/* =========================================
+   LIVE INDICATOR
+========================================= */
+
+.live-indicator {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        6px;
+
+    padding:
+        5px 9px;
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.12);
+
+    border-radius:
+        50px;
+
+    background:
+        rgba(255, 255, 255, 0.07);
+
+    color:
+        rgba(255, 255, 255, 0.72);
+
+    font-size:
+        0.68rem;
+}
+
+
+.live-indicator span {
+
+    width:
+        6px;
+
+    height:
+        6px;
+
+    border-radius:
+        50%;
+
+    background:
+        var(--success);
+
+    box-shadow:
+        0 0 10px
+        rgba(16, 185, 129, 0.7);
+}
+
+
+/* =========================================
+   LOCATION
+========================================= */
+
+.preview-location {
+
+    margin-bottom:
+        8px;
+
+    color:
+        rgba(255, 255, 255, 0.65);
+
+    font-size:
+        0.85rem;
+}
+
+
+/* =========================================
+   TEMPERATURE
+========================================= */
+
+.temperature-row {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        18px;
+}
+
+
+.temperature-row h2 {
+
+    margin:
+        0;
+
+    font-size:
+        6rem;
+
+    font-weight:
+        700;
+
+    line-height:
+        0.95;
+
+    letter-spacing:
+        -5px;
+}
+
+
+.weather-symbol {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    width:
+        65px;
+
+    height:
+        65px;
+
+    border-radius:
+        50%;
+
+    background:
+        rgba(255, 255, 255, 0.08);
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.1);
+
+    font-size:
+        2rem;
+}
+
+
+/* =========================================
+   CONDITION
+========================================= */
+
+.preview-condition {
+
+    margin:
+        10px 0 35px;
+
+    color:
+        rgba(255, 255, 255, 0.8);
+
+    font-size:
+        1rem;
+}
+
+
+/* =========================================
+   DETAILS
+========================================= */
+
+.preview-details {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap:
+        15px;
+
+    padding-top:
+        22px;
+
+    border-top:
+        1px solid
+        rgba(255, 255, 255, 0.1);
+}
+
+
+.preview-details div {
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    gap:
+        3px;
+}
+
+
+.preview-details span {
+
+    color:
+        rgba(255, 255, 255, 0.45);
+
+    font-size:
+        0.68rem;
+}
+
+
+.preview-details strong {
+
+    color:
+        rgba(255, 255, 255, 0.9);
+
+    font-size:
+        0.88rem;
+
+    font-weight:
+        600;
+}

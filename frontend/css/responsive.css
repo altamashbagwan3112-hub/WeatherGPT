@@ -1,0 +1,228 @@
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 991px) {
+
+    .hero-section {
+        min-height: auto;
+
+        padding:
+            70px 0;
+    }
+
+
+    .hero-title {
+        font-size:
+            3.7rem;
+    }
+
+
+    .weather-preview {
+        min-height:
+            390px;
+    }
+
+
+    .weather-navbar .nav-link {
+        padding:
+            10px 4px !important;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 576px) {
+
+    .hero-section {
+        padding:
+            45px 0 60px;
+    }
+
+
+    .hero-title {
+
+        font-size:
+            2.65rem;
+
+        letter-spacing:
+            -1.5px;
+    }
+
+
+    .hero-description {
+
+        font-size:
+            0.98rem;
+
+        line-height:
+            1.7;
+    }
+
+
+    /* Search */
+
+    .hero-search {
+
+        flex-direction:
+            column;
+
+        align-items:
+            stretch;
+
+        padding:
+            0;
+
+        border:
+            none;
+
+        background:
+            transparent;
+
+        box-shadow:
+            none;
+    }
+
+
+    .hero-search input {
+
+        width:
+            100%;
+
+        padding:
+            15px;
+
+        margin-bottom:
+            9px;
+
+        border:
+            1px solid var(--border);
+
+        border-radius:
+            12px;
+
+        background:
+            white;
+
+        box-shadow:
+            var(--shadow-sm);
+    }
+
+
+    .hero-search button {
+
+        width:
+            100%;
+
+        padding:
+            14px;
+    }
+
+
+    /* Quick Questions */
+
+    .quick-questions {
+
+        align-items:
+            flex-start;
+
+        flex-direction:
+            column;
+    }
+
+
+    .quick-questions > span {
+        margin-bottom:
+            2px;
+    }
+
+
+    /* Weather Preview */
+
+    .weather-preview {
+
+        min-height:
+            350px;
+
+        padding:
+            28px;
+
+        border-radius:
+            22px;
+    }
+
+
+    .temperature-row h2 {
+
+        font-size:
+            4.7rem;
+
+        letter-spacing:
+            -3px;
+    }
+
+
+    .weather-symbol {
+
+        width:
+            54px;
+
+        height:
+            54px;
+
+        font-size:
+            1.6rem;
+    }
+
+
+    .preview-details {
+
+        gap:
+            10px;
+    }
+
+
+    .preview-details span {
+
+        font-size:
+            0.62rem;
+    }
+
+
+    .preview-details strong {
+
+        font-size:
+            0.78rem;
+    }
+
+}
+
+
+/* =========================================
+   VERY SMALL DEVICES
+========================================= */
+
+@media (max-width: 380px) {
+
+    .hero-title {
+        font-size:
+            2.35rem;
+    }
+
+
+    .weather-preview {
+        padding:
+            23px;
+    }
+
+
+    .temperature-row h2 {
+        font-size:
+            4rem;
+    }
+
+}
